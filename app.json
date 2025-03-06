@@ -9,12 +9,23 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rochoa.bbpocwebmobile",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAUH-QQgZLLuEwQAE1v9oF8oWwXCj5rPQA"
+      }
     },
     "android": {
       "adaptiveIcon": {
+        "softwareKeyboardLayoutMode": "resize",
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.rochoa.bbpocwebmobile",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAUH-QQgZLLuEwQAE1v9oF8oWwXCj5rPQA"
+        }
       }
     },
     "web": {
@@ -32,10 +43,33 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      "expo-secure-store",
+      "expo-asset",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./node_modules/@expo-google-fonts/Lexend-100Thin.tff",
+            "./node_modules/@expo-google-fonts/Lexend-200ExtraLight.tff",
+            "./node_modules/@expo-google-fonts/Lexend-300Light.tff",
+            "./node_modules/@expo-google-fonts/Lexend-400Regular.tff",
+            "./node_modules/@expo-google-fonts/Lexend-500Medium.tff",
+            "./node_modules/@expo-google-fonts/Lexend-600SemiBold.tff",
+            "./node_modules/@expo-google-fonts/Lexend-700Bold.tff",
+            "./node_modules/@expo-google-fonts/Lexend-800ExtraBold.tff",
+            "./node_modules/@expo-google-fonts/Lexend-900Black.tff"
+          ]
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0bff6b30-a7d8-4d9f-bf70-11f3bc00ad9a"
+      }
     }
   }
 }
